@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicação criada para avaliação em processo seletivo.
 
-Things you may want to cover:
+## REQUISITOS
 
-* Ruby version
+API que consome a API da SpaceX e apresenta as seguintes informações:
 
-* System dependencies
+* Próximo lançamento;
+* Último lançamento;
+* Próximos lançamentos;
+* Lançamentos passados;
 
-* Configuration
+## PRINCIPAIS TECNOLOGIAS UTILIZADAS
 
-* Database creation
+* ruby 3.1.2p20
+* Rails 7.0.4
+* spacex_api 1.0.0 (Ruby API wrapper para consultar a API SpaceX.)
+* RSpec 6.0.1
 
-* Database initialization
+## URL BASE (hosted)
 
-* How to run the test suite
+[https://floating-taiga-08332.herokuapp.com/](https://floating-taiga-08332.herokuapp.com/)
 
-* Services (job queues, cache servers, search engines, etc.)
+## REQUISIÇÕES
 
-* Deployment instructions
+Próximo lançamento
 
-* ...
+Obter o próximo lançamento:
+* GET [/next](https://floating-taiga-08332.herokuapp.com/next)
+
+Obter o último lançamento:
+* GET [/latest](https://floating-taiga-08332.herokuapp.com/latest)
+
+Obter os próximos lançamentos:
+* GET [/upcoming](https://floating-taiga-08332.herokuapp.com/upcoming)
+
+Obter os lançamentos passados:
+* GET [/past](https://floating-taiga-08332.herokuapp.com/past)
